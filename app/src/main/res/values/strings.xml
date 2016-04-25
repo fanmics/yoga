@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yoga Application</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="facebook_app_id">1678488789080878</string>
+</resources>
