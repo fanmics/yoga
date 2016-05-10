@@ -1,6 +1,8 @@
-package com.app.yoga.yogaapplication;
+package com.app.yoga.yogaapplication.utils;
 
 import android.content.Context;
+
+import com.app.yoga.yogaapplication.objects.User;
 
 /**
  * Created by Lenovo on 4/24/2016.

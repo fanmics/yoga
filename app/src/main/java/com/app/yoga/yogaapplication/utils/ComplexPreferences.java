@@ -1,8 +1,7 @@
-package com.app.yoga.yogaapplication;
+package com.app.yoga.yogaapplication.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.widget.ShareActionProvider;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;

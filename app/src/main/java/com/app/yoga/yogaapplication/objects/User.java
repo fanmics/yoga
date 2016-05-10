@@ -1,4 +1,4 @@
-package com.app.yoga.yogaapplication;
+package com.app.yoga.yogaapplication.objects;
 
 /**
  * Created by Lenovo on 4/24/2016.

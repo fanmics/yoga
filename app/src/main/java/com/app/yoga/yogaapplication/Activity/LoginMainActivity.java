@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.app.yoga.yogaapplication.PrefUtils;
+import com.app.yoga.yogaapplication.utils.PrefUtils;
 import com.app.yoga.yogaapplication.R;
-import com.app.yoga.yogaapplication.User;
+import com.app.yoga.yogaapplication.objects.User;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -30,6 +30,7 @@ public class LoginMainActivity extends AppCompatActivity implements View.OnClick
     private ImageButton imgFacebookLogin;
     private ProgressDialog progressDialog;
     User user;
+    private ImageButton imgEmailBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,8 @@ public class LoginMainActivity extends AppCompatActivity implements View.OnClick
         imgFacebookLogin = (ImageButton) findViewById(R.id.image_facebook_btn);
         imgFacebookLogin.setOnClickListener(this);
 
+        imgEmailBtn = (ImageButton) findViewById(R.id.image_email_btn);
+        imgEmailBtn.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +73,10 @@ public class LoginMainActivity extends AppCompatActivity implements View.OnClick
 
                 loginButton.registerCallback(callbackManager,mCallback);
 
+                break;
+            case R.id.image_email_btn:
+                Intent intent = new Intent(LoginMainActivity.this, LoginSecondActivity.class);
+                startActivity(intent);
                 break;
 
         }

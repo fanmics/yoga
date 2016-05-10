@@ -35,7 +35,17 @@
         android:layout_height="39dp"
         android:id="@+id/image_email_btn"
         android:background="@drawable/img_email_btn"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/image_signup_btn"/>
+
+    <ImageButton
+        android:layout_width="216dp"
+        android:layout_height="28dp"
+        android:id="@+id/image_signup_btn"
+        android:background="@drawable/img_signup"
         android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

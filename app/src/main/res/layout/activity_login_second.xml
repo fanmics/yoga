@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    tools:context=".Activity.LoginMainActivity">
+
+    <LinearLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="85">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:background="@drawable/login_form">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editInp"
+                android:hint="@string/username"
+                android:singleLine="true"
+                android:inputType="textCapWords"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/image_signup_btn"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/img_signup" />
+    </LinearLayout>
+
+
+</LinearLayout>
